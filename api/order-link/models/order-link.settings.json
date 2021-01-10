@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_links",
+  "info": {
+    "name": "OrderLink"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "productorder": {
+      "model": "productorder"
+    },
+    "order": {
+      "model": "order"
+    }
+  }
+}

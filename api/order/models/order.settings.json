@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "deliveryOption": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "deliveryPrice": {
+      "type": "string"
+    },
+    "discountTemp": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "waiting",
+        "accepted",
+        "delivered",
+        "ondelivering",
+        "inpreparation"
+      ]
+    }
+  }
+}

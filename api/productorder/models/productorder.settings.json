@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productorders",
+  "info": {
+    "name": "Productorder"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "product": {
+      "model": "product"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}
